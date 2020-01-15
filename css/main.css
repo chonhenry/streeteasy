@@ -1,0 +1,788 @@
+.container {
+  width: 800px;
+  box-sizing: border-box;
+}
+
+#top {
+  background: #032765;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  padding: 0 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.default-font-family {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Navbar */
+#navbar {
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#top-container {
+  height: 50px;
+  color: #fff;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #032765;
+}
+
+#navbar-logo {
+  height: 26px;
+}
+
+#logo {
+  display: flex;
+}
+
+#logo p {
+  margin: auto;
+  font-size: 20px;
+  padding-left: 5px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#top-container a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#bottom {
+  border-bottom: solid #e6e6e6 0.5px;
+  background: #fff;
+}
+
+#bottom-container {
+  color: #fff;
+  width: 1000px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu ul {
+  display: flex;
+  list-style: none;
+}
+
+#menu a {
+  color: #1a1f2c;
+  font-weight: bold;
+  font-size: 13px;
+  margin: auto 23px;
+}
+
+#menu a:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#menu-search input {
+  border: 1px #e6e6e6 solid;
+  border-radius: 26px;
+  height: 20px;
+  width: 230px;
+  padding: 5px 40px 5px 18px;
+}
+
+#menu-search-box {
+  position: relative;
+}
+
+#menu-search-box .fas {
+  position: absolute;
+  right: 12px;
+  top: 7px;
+  border: none;
+}
+
+/* Section: Search */
+#search {
+  height: 305px;
+}
+
+#search .container {
+  width: 1000px;
+  height: 305px;
+  margin: auto;
+}
+
+#search p {
+  color: #8c8c8c;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  padding-top: 28px;
+  font-weight: bold;
+}
+
+#options {
+  padding: 12px 0 21px;
+  line-height: 38px;
+}
+
+#search a {
+  color: #8c8c8c;
+  font-size: 32px;
+  padding: 0 13px 0 0;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+#sales {
+  color: #1a1f2c;
+  border-bottom: #0080c6 2px solid;
+  font-weight: 100;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#info input,
+#info button {
+  height: 40px;
+}
+
+#neighborhood {
+  display: inline-block;
+  position: relative;
+}
+
+#neighborhood-input {
+  padding: 0 0 0 30px;
+  width: 275px;
+  font-size: 12px;
+}
+
+#neighborhood .fas {
+  position: absolute;
+  left: 5px;
+  color: #0080c6;
+  margin-left: 5px;
+  margin-top: 14px;
+}
+
+#price {
+  display: inline-block;
+}
+
+#minimum-input {
+  padding: 0 0 0 15px;
+  font-size: 12px;
+  width: 100px;
+}
+
+#maximum-input {
+  padding: 0 0 0 15px;
+  font-size: 12px;
+  margin-left: -5px;
+  width: 100px;
+}
+
+#room-type ul {
+  display: flex;
+  height: 40px;
+  width: 210px;
+  border: 1px solid lightgray;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#room-type ul li {
+  padding: 0 5px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+#btn-search {
+  width: 200px;
+  background-color: #0080c6;
+  color: #fff;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+#search .container #advanced {
+  padding: 15px 0 24px 0;
+  color: #0080c6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.explorenyc-img {
+  height: 40px;
+  width: 40px;
+}
+
+#nyc {
+  color: #8c8c8c;
+  font-size: 10px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+#explore {
+  display: flex;
+  padding: 28px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 5px;
+}
+
+.description {
+  padding-left: 10px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+#explore .description h5 {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  color: #0080c6;
+}
+
+#explore .description p {
+  padding: 25px 0 0 0;
+  color: #8c8c8c;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* Section: Listing */
+#listing {
+  height: 1530px;
+  background: #f5f5f5;
+}
+
+#listing .container {
+  height: inherit;
+  width: 1000px;
+  margin: auto;
+}
+
+#item-1 {
+  height: 1460px;
+}
+
+.grid-1 {
+  padding-top: 24px;
+  display: grid;
+  grid-template-columns: auto 228px;
+  grid-gap: 25px;
+}
+
+#side {
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-listing {
+  width: 100%;
+  height: 312px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.side-listing .photo-1 {
+  width: 100%;
+  height: 175px;
+  background: url(https://cdn-img-feed.streeteasy.com/nyc/image/98/382970898.jpg)
+    no-repeat top center/cover;
+}
+
+.side-listing .photo-2 {
+  width: 100%;
+  height: 175px;
+  background: url(https://cdn-img-feed.streeteasy.com/nyc/image/45/383428945.jpg)
+    no-repeat top center/cover;
+}
+
+.side-listing .photo-3 {
+  width: 100%;
+  height: 175px;
+  background: url(https://cdn-img-feed.streeteasy.com/nyc/image/67/383427967.jpg)
+    no-repeat top center/cover;
+}
+
+.side-listing .photo-4 {
+  width: 100%;
+  height: 175px;
+  background: url(https://cdn-img-feed.streeteasy.com/nyc/image/2/381345902.jpg)
+    no-repeat top center/cover;
+}
+
+.side-listing .listing-info {
+  margin-left: 20px;
+}
+
+.side-listing .listing-info .place,
+.building-info .place {
+  padding-top: 20px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #8c8c8c;
+}
+
+.side-listing .listing-info .address,
+.building-info .address {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #0080c6;
+}
+
+.side-listing .listing-info .price {
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: black;
+  display: inline-block;
+  font-weight: 900;
+}
+
+.side-listing .listing-info .room-number,
+.building-info .unit-year {
+  display: flex;
+}
+
+.room-number img,
+.unit-year img {
+  padding-right: 10px;
+}
+
+.room-number p,
+.unit-year p {
+  padding-right: 10px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #8c8c8c;
+}
+
+#left-top {
+  display: flex;
+  padding-bottom: 60px;
+  border-bottom: #e6e6e6 1px solid; /*e6e6e6*/
+  justify-content: space-between;
+}
+
+#left-top-left {
+  height: 305px;
+  width: 228px;
+}
+
+#left #left-top {
+  height: 590px;
+  border-bottom: #e6e6e6 1px solid; /*e6e6e6*/
+}
+
+.photo-top-left-1 {
+  width: 100%;
+  height: 175px;
+  background: url(https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCnla_eahABGAEyCEUIIjtGjphh)
+    no-repeat top center/cover;
+}
+
+.photo-top-left-1 {
+  width: 100%;
+  height: 175px;
+  background: url(https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCnla_eahABGAEyCEUIIjtGjphh)
+    no-repeat top center/cover;
+}
+
+.photo-top-left-2 {
+  width: 100%;
+  height: 175px;
+  background: url(https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCn7MvpUhABGAEyCNBQSqcsTEDt)
+    no-repeat top center/cover;
+}
+
+#left-top-left-2 {
+  margin-top: 22px;
+}
+
+.building-info {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+}
+
+.building-info .unit-year {
+  margin-top: 35px;
+}
+
+#left-top-right {
+  width: 490px;
+  height: 630px;
+  margin-bottom: 20px;
+  position: relative;
+  background: #fff;
+}
+
+#left-top-right .content .title {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #0080c6;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+#left-top-right .content .description-title {
+  font-size: 14px;
+  color: #1a1f2c;
+  text-align: center;
+  line-height: 22px;
+  margin: 20px 25px 0 25px;
+  font-weight: bolder;
+}
+
+.left-top-right-photo {
+  width: 100%;
+  height: 368px;
+  background: url(https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCH-8PP7AEQARgBMggoZ8PdnQX-Lg)
+    no-repeat top center/cover;
+}
+
+.logo-container {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  text-align: center;
+  border-top: #e6e6e6 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  max-height: 40px;
+}
+
+#left-middle {
+  height: 175px;
+  border-bottom: #e6e6e6 1px solid;
+  padding: 24px 0 24px 0;
+}
+
+#left-middle #middle-topic .default-font-family {
+  font-size: 32px;
+  margin: 0 auto 20px 0;
+  font-weight: 100;
+  position: relative;
+}
+
+#listing-and-circle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trending-listing {
+  display: flex;
+}
+
+#first-listing,
+#second-listing {
+  width: 312px;
+  height: 115px;
+  background: #fff;
+}
+
+#listing-and-circle .trending-info {
+  margin: 15px;
+}
+
+#first-listing .photo-middle {
+  height: 100%;
+  width: 115px;
+  background: url(https://cdn-img-feed.streeteasy.com/nyc/image/67/381613167.jpg)
+    no-repeat top center/cover;
+}
+
+#second-listing .photo-middle {
+  height: 100%;
+  width: 115px;
+  background: url(https://cdn-img3.streeteasy.com/nyc/image/15/365565615.jpg)
+    no-repeat top center/cover;
+}
+
+.trending-listing .place {
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #8c8c8c;
+}
+
+.trending-listing .address {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #0080c6;
+}
+
+.trending-listing .price {
+  padding-bottom: 10px;
+  font-size: 20px;
+  color: black;
+  display: inline-block;
+  font-weight: 900;
+}
+
+#first-listing .room-number,
+#second-listing .room-number {
+  display: flex;
+}
+
+#first-listing .room-number {
+  padding-right: 10px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #8c8c8c;
+}
+
+#listing-and-circle #circle {
+  width: 52px;
+  height: 52px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left Bottom */
+#left-bottom #bottom-title {
+  padding-bottom: 20px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 100;
+}
+
+#left-bottom {
+  height: 550px;
+  margin-top: 24px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+#blog-post {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-post-column {
+  width: 228px;
+}
+
+#lastest .blog-lastest-img {
+  background: url(https://wp-tid.zillowstatic.com/streeteasy/2/barrow-kitchen-FEAT-1aa833.jpg)
+    no-repeat center center/cover;
+  height: 175px;
+  width: 228px;
+}
+
+#popular .blog-lastest-img {
+  background: url(https://wp-tid.zillowstatic.com/streeteasy/2/West-Village-ROW-dd2dd7.png)
+    no-repeat center center/cover;
+  height: 175px;
+  width: 228px;
+}
+
+#trend .blog-lastest-img {
+  background: url(https://wp-tid.zillowstatic.com/streeteasy/2/LTRAIN-For-blog-index-page-10d4e5.png)
+    no-repeat center center/cover;
+  height: 175px;
+  width: 228px;
+}
+
+.blog-post-column h5 {
+  font-size: 11px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #8c8c8c;
+  padding: 17px 0 0;
+}
+
+.blog-post-column p {
+  font-size: 13px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #1a1f2c;
+  padding: 17px 0;
+  line-height: 20px;
+  border-bottom: 1px #e6e6e6 solid;
+}
+
+.blog-post-column li:last-child p {
+  border-bottom: none;
+}
+
+/* Footer */
+#footer {
+  background: #272d39;
+  height: 960px;
+  color: #ffffff;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+#footer .container {
+  width: 1000px;
+  margin: auto;
+}
+
+#footer li {
+  line-height: 23px;
+}
+
+#footer .title {
+  font-size: 11px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+}
+
+#footer .item {
+  font-size: 10px;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+#footer-grid {
+  padding-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(4, 252px);
+  grid-template-areas:
+    "manhattan brooklyn queens blog"
+    "bronx staten nj app"
+    "social social social social"
+    "link link link link"
+    "copyright copyright copyright copyright";
+}
+
+#footer-manhattan {
+  grid-area: manhattan;
+}
+
+#footer-brooklyn {
+  grid-area: brooklyn;
+}
+
+#footer-queens {
+  grid-area: queens;
+}
+
+#footer-bronx {
+  grid-area: bronx;
+  margin-top: 40px;
+}
+
+#footer-staten {
+  grid-area: staten;
+  margin-top: 40px;
+}
+
+#footer-nj {
+  grid-area: nj;
+  margin-top: 40px;
+}
+
+#footer-blog {
+  grid-area: blog;
+}
+
+#footer-app {
+  grid-area: app;
+  margin-top: 40px;
+}
+
+#footer-app #apple a {
+  padding-left: 0;
+}
+
+#footer-app #apple img {
+  width: 60%;
+}
+
+#footer-app #google a {
+  padding-left: 0;
+}
+
+#footer-app #google img {
+  width: 60%;
+}
+
+#footer-social-media {
+  grid-area: social;
+  margin-top: 49px;
+  border-top: 1px #8c8c8c solid;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-social-media img {
+  width: 24px;
+}
+
+#footer-link {
+  grid-area: link;
+}
+
+#footer-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-link-container a {
+  padding: 0 10px 0 10px;
+  font-size: 11px;
+}
+
+#footer-copyright {
+  grid-area: copyright;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 11px;
+}
